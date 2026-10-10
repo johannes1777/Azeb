@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffb3c6">
+  <title>For Azeb ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💖%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nunito:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="hearts-layer" id="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <div class="card" id="card">
+
+      <h1 class="question" id="question">Azeb, do you love me?</h1>
+      <h2 class="knew" id="knew" hidden>I knew it! <span class="beat">❤️</span></h2>
+
+      <!-- Cute original cartoon character -->
+      <div class="char" aria-hidden="true">
+        <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" focusable="false">
+          <ellipse cx="100" cy="209" rx="54" ry="8" fill="#f5a7bd" opacity=".35"/>
+          <g fill="#fff" stroke="#e8b9c8" stroke-width="3">
+            <ellipse cx="78" cy="201" rx="15" ry="8"/>
+            <ellipse cx="122" cy="201" rx="15" ry="8"/>
+            <ellipse cx="100" cy="158" rx="43" ry="42"/>
+            <ellipse cx="100" cy="88" rx="70" ry="58"/>
+          </g>
+          <path d="M100 32 C91 14 108 6 113 20" fill="none" stroke="#e8b9c8" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- eyes: normal -->
+          <g class="eyes eyes-normal">
+            <ellipse cx="72" cy="92" rx="12" ry="15" fill="#3b1f2b"/>
+            <ellipse cx="128" cy="92" rx="12" ry="15" fill="#3b1f2b"/>
+            <circle cx="68" cy="86" r="4.6" fill="#fff"/>
+            <circle cx="124" cy="86" r="4.6" fill="#fff"/>
+            <circle cx="77" cy="98" r="2.3" fill="#fff"/>
+            <circle cx="133" cy="98" r="2.3" fill="#fff"/>
+          </g>
+          <!-- eyes: happy -->
+          <g class="eyes-happy" fill="none" stroke="#3b1f2b" stroke-width="5" stroke-linecap="round">
+            <path d="M60 96 Q72 78 84 96"/>
+            <path d="M116 96 Q128 78 140 96"/>
+          </g>
+
+          <ellipse cx="50" cy="111" rx="12" ry="7.5" fill="#ff9db7" opacity=".7"/>
+          <ellipse cx="150" cy="111" rx="12" ry="7.5" fill="#ff9db7" opacity=".7"/>
+
+          <!-- mouth: normal / happy -->
+          <path class="mouth-normal" d="M92 113 Q96 119 100 113 Q104 119 108 113" fill="none" stroke="#b5476b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="mouth-happy" d="M88 108 Q100 130 112 108 Z" fill="#e0607e" stroke="#b5476b" stroke-width="3" stroke-linejoin="round"/>
+
+          <!-- held heart -->
+          <g class="held-heart">
+            <path transform="translate(100 156) scale(1.7)" d="M0 8 C-14 -2 -12 -14 -5 -14 C-2 -14 0 -11 0 -9 C0 -11 2 -14 5 -14 C12 -14 14 -2 0 8Z" fill="#ff6b8f" stroke="#e0436b" stroke-width="1.4" stroke-linejoin="round"/>
+          </g>
+          <!-- hands -->
+          <g class="hands" fill="#fff" stroke="#e8b9c8" stroke-width="3">
+            <ellipse class="hand hand-l" cx="76" cy="160" rx="10" ry="12"/>
+            <ellipse class="hand hand-r" cx="124" cy="160" rx="10" ry="12"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Step 1: the question buttons -->
+      <div class="buttons" id="ask">
+        <button type="button" class="btn yes" id="yes">Yes ❤️</button>
+        <span class="no-slot" id="noSlot">
+          <button type="button" class="btn no" id="no">No 💔</button>
+        </span>
+      </div>
+
+      <!-- Step 2: the romantic surprise -->
+      <section class="message" id="message" hidden aria-live="polite">
+        <p class="line">Azeb, you are my favorite hello and my hardest goodbye.</p>
+        <p class="line">You make my days brighter, my heart softer, and my whole life so much sweeter.</p>
+        <p class="line">I love you more than words can ever say, today, tomorrow, and always.</p>
+        <p class="line sign">Forever yours ❤️</p>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
